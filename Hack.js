@@ -72,8 +72,6 @@ let Cheat = new (class Hack {
 
 	autoplay() {
 		if(!this.hacks.autoplay) {
-			clearInterval(this.bot);
-		} else {
 			this.bot = setInterval(() => {
 				if(Runner.instance_.horizon.obstacles.length > 0) {
 					if(Runner.instance_.horizon.obstacles[0].xPos < Runner.instance_.currentSpeed * 25 - Runner.instance_.horizon.obstacles[0].width / 2 && Runner.instance_.horizon.obstacles[0].yPos > 75) {
@@ -85,6 +83,8 @@ let Cheat = new (class Hack {
 						keyDown(40);
 				}
 			}, 5);
+		} else {
+			clearInterval(this.bot);
 		}
 		this.hacks.autoplay = !this.hacks.autoplay;
 	}
