@@ -49,7 +49,6 @@ let Cheat = new (class Hack {
 			score: 0,
 			speed: 10,
 			jump: 12,
-			skin: "https://raw.githubusercontent.com/<URL DU PNG>",
 			gameOver: Runner.prototype.gameOver
 		};
 
