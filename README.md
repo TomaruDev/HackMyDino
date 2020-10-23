@@ -8,7 +8,7 @@ Simply because I was bored. And because I wanted to do live again ([https://twit
 ### How ?
 In JavaScript, during my [Twitch lives](https://twitch.tomaru.dev), in a few days.
 ### Ok, how do we install it ?
-Well, let's. Several solutions, either you launch Chrome and you mark in the URL chrome://dino, or you go to [chrome://dino](chrome://dino), you do "Control + Shift + I", you click on the "Console" tab, and you make a copy&paste of the content of "Hack.min.js". Press "Enter", and that's it !
+Well, let's. Several solutions, either you launch Chrome and you mark in the URL `chrome://dino`, or you go to [https://chromedino.com](https://chromedino.com), you do "Control + Shift + I", you click on the "Console" tab, and you make a copy&paste of the content of "Hack.min.js". Press "Enter", and that's it !
 ### Thanks, but how do we use it ?
 It's very simple.
 (Documentation coming soon...)
