@@ -61,16 +61,17 @@ let Cheat = new (class Hack {
 	}
 
 
-	invincible(bool) {
-		if(bool) {
+	invincible() {
+		if(!this.hacks.invincible) {
 			Runner.prototype.gameOver = () => {};
 		} else {
 			Runner.prototype.gameOver = this.default.gameOver;
 		}
+		this.hacks.invincible = !this.hacks.invincible;
 	}
 
-	autoplay(bool) {
-		if(bool) {
+	autoplay() {
+		if(!this.hacks.autoplay) {
 			clearInterval(this.bot);
 		} else {
 			this.bot = setInterval(() => {
@@ -85,6 +86,7 @@ let Cheat = new (class Hack {
 				}
 			}, 5);
 		}
+		this.hacks.autoplay = !this.hacks.autoplay;
 	}
 
 	skin(image) {
@@ -139,18 +141,31 @@ document.addEventListener("keypress", (e) => {
 
 	switch(e.key) {
 		case "0":
-			Cheat.invincible(!Cheat.hacks.invincible);
-			Cheat.hacks.invincible = !Cheat.hacks.invincible;
+			Cheat.invincible();
 		break;
 	
 		case "1":
-			Cheat.autoplay(!Cheat.hacks.autoplay);
-			Cheat.hacks.autoplay = !Cheat.hacks.autoplay;
+			Cheat.autoplay();
 		break;
 
 		case "2":
 			let image = prompt("Enter a URL or a Base64 code to define the sprites of the dino :");
-			if(image != '' && image != null) Cheat.skin(image);
+			if(image != '' && image != null) {
+				switch(image.toLowerCase()) {
+					case "default":
+						image = "https://raw.githubusercontent.com/TomaruDev/HackMyDino/main/assets/Default.png"
+						break;
+
+					case "mario":
+						image = "https://raw.githubusercontent.com/TomaruDev/HackMyDino/main/assets/Mario.png"
+						break;
+
+					case "sonic":
+						image = "https://raw.githubusercontent.com/TomaruDev/HackMyDino/main/assets/Sonic.png"
+						break;
+				}
+				Cheat.skin(image);
+			}
 		break;
 
 		case "3":
@@ -166,18 +181,6 @@ document.addEventListener("keypress", (e) => {
 		case "5":
 			let jump = prompt("Enter the jump to set :");
 			if(jump != '' && jump != null) Cheat.setJump(jump);
-		break;
-
-		case "6":
-		break;
-		
-		case "7":
-		break;
-		
-		case "8":
-		break;
-		
-		case "9":
 		break;
 	}
 }, false);
