@@ -10,15 +10,17 @@ In JavaScript, during my [Twitch lives](https://twitch.tomaru.dev), in a few day
 ### Ok, how do we install it ?
 Well, let's. Several solutions, either you launch Chrome and you mark in the URL `chrome://dino`, or you go to [https://chromedino.com](https://chromedino.com), you do "Control + Shift + I", you click on the "Console" tab, and you make a copy&paste of the content of "Hack.min.js". Press "Enter", and that's it !
 ### Thanks, but how do we use it ?
-
-By pressing the following keys on your numeric keypad you can trigger the corresponding action :
+It's very simple.
+By pressing the keys below on your keyboard, you can activate the hacks present in the code.
+You can use the numeric keypad or the top numbered keys, pressing "shift" at the same time.
 
 | Key | Action                                                                    |
 |-----|---------------------------------------------------------------------------|
 | 0   | Invincibility                                                             |
 | 1   | Auto-Play                                                                 |
-| 2   | Change Skin (link to a Base64 skin, or use "default", "sonic" or "mario") |
-| 3   | Change score                                                              |
-| 4   | Change speed                                                              |
-| 5   | Jump Height                                                               |
+| 2   | Skin                                                                      |
+| 3   | Score                                                                     |
+| 4   | Speed                                                                     |
+| 5   | Jump                                                                      |
 
+(Thanks to @Dawoox for the lil' documentation ^^)
