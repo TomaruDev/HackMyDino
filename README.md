@@ -16,11 +16,11 @@ You can use the numeric keypad or the top numbered keys, pressing "shift" at the
 
 | Key | Action                                                                    |
 |-----|---------------------------------------------------------------------------|
-| 0   | Invincibility                                                             |
-| 1   | Auto-Play                                                                 |
-| 2   | Skin                                                                      |
-| 3   | Score                                                                     |
-| 4   | Speed                                                                     |
-| 5   | Jump                                                                      |
+| 0   | Invincibility \[Enable / Disable\]                                        |
+| 1   | Auto-Play \[Enable / Disable\]                                            |
+| 2   | Skin \[Set\] (URL, Base64, 'Sonic', 'Mario' or 'Default')                 |
+| 3   | Score \[Set\]                                                             |
+| 4   | Speed \[Set\]                                                             |
+| 5   | Jump \[Set\]                                                              |
 
 (Thanks to @Dawoox for the lil' documentation ^^)
