@@ -108,6 +108,7 @@ let Cheat = new (class Hack {
 
 
 	setSpeed(speed) {
+		// Here's bugs with that function, i'll fix it later
 		Runner.instance_.setSpeed(speed);
 	}
 
