@@ -25,4 +25,4 @@ You can use the numeric keypad or the top numbered keys, pressing "shift" at the
 | 4   | Speed \[Set\] {BUG (i'll fix it later)}                                  |
 | 5   | Jump \[Set\]                                                              |
 
-(Thanks to @Dawoox for the lil' documentation ^^)
+(Thanks to [@Dawoox](https://github.com/Dawoox) for the lil' documentation ^^)
