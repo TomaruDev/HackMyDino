@@ -22,7 +22,7 @@ You can use the numeric keypad or the top numbered keys, pressing "shift" at the
 | 1   | Auto-Play \[Enable / Disable\]                                            |
 | 2   | Skin \[Set\] (URL, Base64, 'Sonic', 'Mario' or 'Default')                 |
 | 3   | Score \[Set\]                                                             |
-| 4   | Speed \[Set\] {BUG (i'll fix it later)}                                   |
+| 4   | Speed \[Set\]                                                             |
 | 5   | Jump \[Set\]                                                              |
 
 (Thanks to [@Dawoox](https://github.com/Dawoox) for the lil' documentation ^^)
