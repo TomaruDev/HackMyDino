@@ -108,7 +108,6 @@ let Cheat = new (class Hack {
 
 
 	setSpeed(speed) {
-		// Here's bugs with that function, i'll fix it later
 		Runner.instance_.setSpeed(speed);
 	}
 
@@ -169,18 +168,18 @@ document.addEventListener("keypress", (e) => {
 		break;
 
 		case "3":
-			let score = prompt("Enter the score to set :");
-			if(score != '' && score != null) Cheat.setScore(score);
+			let score = parseInt(prompt("Enter the score to set :"));
+			if(score != NaN && score != '' && score != null) Cheat.setScore(score);
 		break;
 
 		case "4":
-			let speed = prompt("Enter the speed to set :");
-			if(speed != '' && speed != null) Cheat.setSpeed(speed);
+			let speed = parseInt(prompt("Enter the speed to set :"));
+			if(speed != NaN && speed != '' && speed != null) Cheat.setSpeed(speed);
 		break;
 
 		case "5":
-			let jump = prompt("Enter the jump to set :");
-			if(jump != '' && jump != null) Cheat.setJump(jump);
+			let jump = parseInt(prompt("Enter the jump to set :"));
+			if(jump != NaN && jump != '' && jump != null) Cheat.setJump(jump);
 		break;
 	}
 }, false);
